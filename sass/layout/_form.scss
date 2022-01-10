@@ -48,3 +48,13 @@
   margin-left: 10px;
   padding: 0;
 }
+.from_block {
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}

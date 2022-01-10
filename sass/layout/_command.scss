@@ -3,6 +3,17 @@
   margin-bottom: 0;
   display: flex;
   padding: 0px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .command__specialists {
@@ -13,6 +24,12 @@
 
   &:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .command__center {

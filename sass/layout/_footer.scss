@@ -3,13 +3,25 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.container__footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
 
-  .container__footer {
+  @media screen and (min-width: 480px) {
+    width: 480px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
+
 .address {
   margin-top: 20px;
 }
@@ -17,6 +29,17 @@
   padding-left: 0px;
   margin-bottom: 0px;
   margin-top: 6px;
+
+  @media screen and (min-width: 480px) {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .address__content {

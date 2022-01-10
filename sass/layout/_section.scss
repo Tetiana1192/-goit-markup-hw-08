@@ -9,6 +9,9 @@
 
 .section--top {
   padding-top: 47px;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 .section--other-background {
   background-color: #f5f4fa;
