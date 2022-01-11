@@ -1,7 +1,6 @@
 .social-networks {
   border: none;
   list-style: none;
-  margin-left: 70px;
 }
 .clients {
   display: flex;
@@ -25,6 +24,8 @@
     width: 480px;
     flex-direction: column;
     display: flex;
+    align-items: center;
+    margin-top: 60px;
   }
 }
 .clients__icon-clients {

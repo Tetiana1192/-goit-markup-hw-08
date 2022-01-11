@@ -18,6 +18,10 @@
     ),
     url(../images/img3.jpg);
   background-color: #c4c4c4;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 .hero__title {
   color: var(--main-title-color);
@@ -27,4 +31,15 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
