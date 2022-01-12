@@ -45,7 +45,12 @@ p {
 
 .header {
   border-bottom: 1px solid #ececec;
-  position: relative;
+}
+
+@media screen and (min-width: 320px) {
+  .container__header {
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -187,6 +192,11 @@ p {
   width: 100%;
 }
 
+.menu-icon.icon-cross {
+  width: 40px;
+  height: 40px;
+}
+
 .container__item {
   color: var(--main-text-color);
   font-family: Raleway, cursive;
@@ -254,12 +264,9 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .basement {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    text-align: left;
   }
 }
 
@@ -446,19 +453,28 @@ p {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
+  .container__footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -468,8 +484,19 @@ p {
 
 .address__list {
   padding-left: 0px;
-  margin-bottom: 0px;
   margin-top: 6px;
+}
+
+@media screen and (min-width: 320px) {
+  .address__list {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address__list {
+    margin-top: 8px;
+  }
 }
 
 .address__content {
@@ -501,6 +528,15 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+}
+
 .form-bloc__mailing {
   font-size: 14px;
   line-height: 1.14;
@@ -508,7 +544,6 @@ p {
   color: var(--main-title-color);
   margin-bottom: 20px;
   font-weight: 700;
-  margin-top: 60px;
 }
 
 .form-bloc__email {
@@ -550,6 +585,7 @@ p {
   list-style: none;
   margin-top: 60px;
   text-align: center;
+  margin: 0;
 }
 
 .clients {

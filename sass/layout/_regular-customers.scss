@@ -12,6 +12,10 @@
     display: flex;
     margin: -15px;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .regular-customers__icon-client {
   fill: #afb1b8;
