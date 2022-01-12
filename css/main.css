@@ -732,6 +732,29 @@ ul {
   height: 70px;
 }
 
+.annexes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0;
+  margin: 0px;
+}
+
+.annexes__technology {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .annexes li {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -1063,6 +1086,7 @@ ul {
 }
 
 .container__footer {
+  display: block;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -1148,9 +1172,6 @@ ul {
 
 @media screen and (min-width: 320px) {
   .form-bloc__email {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
