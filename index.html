@@ -24,12 +24,15 @@
  <div class="container container__header">
 <a href="" class="container__item"><span class=" container__link container__link--accent">Web</span>Studio</a>
     <nav>
-        <button type="button" class="menu-button">
-        <svg width="40" height="40">
-         <use href="images/symbol-defs.svg#icon-close"></use>
-         <use href="images/symbol-defs.svg#icon-menu"></use>
+        <button type="button" class="menu-button is-open" aria-expanded="false"  aria-controls="menu-container" data-menu-button>
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+         <use class="icon-cross" href="images/symbol-defs.svg#icon-close"></use>
+         <use class="menu-icon" href="images/symbol-defs.svg#icon-menu"></use>
         </svg> 
         </button>
+
+<div class="menu-container" id="menu-container" data-menu></div>
+
         <ul class="site-nav list">
         <li class="site-nav__item"><a href=""class="site-nav__link  site-nav__link--current">Студия</a></li>
         
@@ -287,7 +290,7 @@
         </main>
 
 <footer class="footer">
-    <div class="container container__footer">
+    <div class="container">
         <div class="basement">
         <a href="" class="basement__item"><span class=" basement__link basement__link--accent">Web</span><span class="basement__studio">Studio</span></a>
     <address class="address">
@@ -341,7 +344,7 @@
   
 </form>
 </div>
-</div>
+
 </div>
     </footer>
  
@@ -409,5 +412,6 @@
 </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

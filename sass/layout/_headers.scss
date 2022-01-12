@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 .container__header {
   //  display: flex;
@@ -7,7 +8,7 @@
   //   justify-content: center;
 
   @media screen and (min-width: 320px) {
-    display: flex;
+    // display: flex;
   }
 
   @media screen and (min-width: 768px) {
@@ -113,4 +114,21 @@
   margin: 0;
   padding: 0;
   border: none;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-icon {
+  display: none;
+}
+.menu-container {
+  background-color: crimson;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }

@@ -1,16 +1,17 @@
 .social-networks {
   border: none;
   list-style: none;
+  margin-top: 60px;
+  text-align: center;
 }
 .clients {
   // display: flex;
   padding: 0px;
   border: none;
-
   @media screen and (min-width: 320px) {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 }
 .command-clients {
@@ -19,21 +20,15 @@
   letter-spacing: 0.03em;
   color: var(--main-title-color);
   margin-bottom: 20px;
-
-  @media screen and (min-width: 320px) {
-    margin-top: 60px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-  }
+  text-align: center;
 }
 .clients__icon-clients {
   width: 44px;
   height: 44px;
   padding: 0;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
   &:not(:last-child) {
     margin-right: 10px;
