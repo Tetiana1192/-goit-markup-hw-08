@@ -30,7 +30,7 @@
   color: var(--main-text-color);
   font-family: Raleway, cursive;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   text-decoration: none;
   font-style: normal;
@@ -38,19 +38,18 @@
 
   @media screen and (min-width: 320px) {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .basement {
-  @media screen and (min-width: 320px) {
-    
-  }
-
   @media screen and (min-width: 768px) {
     flex-direction: column;
   }
