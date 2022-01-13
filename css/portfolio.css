@@ -47,10 +47,8 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 320px) {
-  .container__header {
-    position: relative;
-  }
+.container__header {
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -163,7 +161,7 @@ p {
   fill: var(--text-accent-color);
 }
 
-.menu-button {
+.container__menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -172,29 +170,48 @@ p {
   border: none;
 }
 
-.menu-button .icon-cross {
+@media screen and (min-width: 768px) {
+  .container__menu-button {
+    display: none;
+  }
+}
+
+.container__menu-button .container__icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.container__menu-button.is-open .container__icon-cross {
   display: block;
 }
 
-.menu-button.is-open .menu-icon {
+.container__menu-button.is-open .container__menu-icon {
   display: none;
 }
 
-.menu-container {
-  background-color: crimson;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+.container__menu-container {
+  height: 622px;
 }
 
-.menu-icon.icon-cross {
-  width: 40px;
-  height: 40px;
+.container__menu-container.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .container__menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (mix-width: 768px) {
+  .container__menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .container__item {
@@ -267,6 +284,17 @@ p {
 @media screen and (min-width: 1200px) {
   .basement {
     text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 70px;
   }
 }
 
@@ -499,6 +527,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .address__list {
+    margin-bottom: 8px;
+  }
+}
+
 .address__content {
   color: var(--text-white-transparent);
   font-weight: 400;
@@ -559,6 +593,13 @@ p {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-bloc__email {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
 .form-bloc__form-button {
   width: 200px;
   height: 50px;
@@ -586,6 +627,12 @@ p {
   margin-top: 60px;
   text-align: center;
   margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-networks {
+    margin-right: 93px;
+  }
 }
 
 .clients {
