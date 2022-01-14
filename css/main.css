@@ -190,6 +190,7 @@ p {
 
 .container__menu-container {
   height: 622px;
+  width: 100%;
 }
 
 .container__menu-container.is-open {
@@ -206,7 +207,7 @@ p {
   }
 }
 
-@media screen and (mix-width: 768px) {
+@media screen and (min-width: 768px) {
   .container__menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -333,9 +334,16 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img3.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img3.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/header1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header1.jpg);
   background-color: #c4c4c4;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Header2@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header2@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -455,7 +463,7 @@ p {
   background-color: var(--main-title-color);
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;
     width: 100%;
@@ -469,6 +477,30 @@ p {
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
   }
 }
 
@@ -530,10 +562,6 @@ p {
 }
 
 /**/
-.modal__form-contant {
-  padding: 40px;
-}
-
 .modal__user-data {
   margin: 0;
   padding: 0;
@@ -631,37 +659,38 @@ p {
 
 .modal__checkbox-one {
   margin: 0;
-  padding-left: 12px;
   margin-bottom: 30px;
   position: relative;
 }
 
 .modal__mailing-list {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.71;
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: #757575;
   padding: 0;
-  cursor: pointer;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: bold;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1199px) {
   .modal__mailing-list {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.16;
-    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    padding: 0;
+    cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    letter-spacing: 0.03em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: bold;
   }
 }
 
