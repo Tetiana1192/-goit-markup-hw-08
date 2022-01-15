@@ -1,13 +1,8 @@
 /*hero*/
 .hero {
-  text-align: center;
-  //padding-top: 200px;
-  //padding-bottom: 200px;
-
-  // max-width: 1600px;
- //height: 600px;
-  @media screen and (max-width: 767px) {
-  width: 320px;
+  
+  
+  width: 450px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -32,24 +27,85 @@
       ),
       url(/images/Header2@2x.jpg);
   }
+  @media screen and (max-width: 767px) {
+width: 768px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images.tab/Header-tab1.jpg);
+  background-color: #c4c4c4;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images.tab/Header-tab@2x.jpg);
+    }
+@media screen and (min-width: 1200px) {
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images.desktop/header1-des.jpg);
+  background-color: #c4c4c4;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images.desktop/header1-des@2x.jpg);
+
+
+}
+
+
 }
 
 .hero__title {
-  color: var(--main-title-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 320px) {
-    font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
+  
+  @media screen and (min-width: 1200px) {
+  color: var(--main-title-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  margin-top: 0;
+  //margin-bottom: 30px;
   }
+  
+  }
+ 
 }

@@ -1,6 +1,11 @@
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 .section-portfolio {
   padding-bottom: 94px;
@@ -8,19 +13,23 @@
 }
 
 .section--top {
-  padding-top: 47px;
-  @media (max-width: 767px) {
+  //padding-top: 47px;
+  //@media (max-width: 767px) {
+  // display: none;
+  //}
+
+  @media screen and (max-width: 1199px) {
     display: none;
   }
-
-  @media screen and (min-width: 767px) {
-    display: none;
+  @media screen and (max-width: 1200px) {
+    display: block;
   }
 }
 .section--other-background {
   background-color: #f5f4fa;
+  //padding-top: 90px;
 }
 
 .section--bottom {
-  padding-bottom: 47px;
+  //padding-bottom: 47px;
 }
