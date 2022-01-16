@@ -59,13 +59,11 @@
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+
   &:hover {
     border: 1px solid var(--text-accent-color);
-  }
-
-  @media screen and (min-width: 320px) {
-    width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
   }
 
   @media screen and (min-width: 768px) {
