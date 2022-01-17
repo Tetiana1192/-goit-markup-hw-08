@@ -1,9 +1,6 @@
 .feature {
   //margin: 0;
   padding: 0px;
-  margin-bottom: -30px;
-  
-  }
 
   @media screen and (min-width: 768px) {
     margin: -15px;
@@ -19,9 +16,12 @@
 }
 
 .feature__item {
-  margin-bottom: 30px;
-  flex-basis: calc(100 % / 1);
   width: 270px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);

@@ -1,12 +1,4 @@
 .section__title {
-  //color: var(--main-text-color);
-  //font-weight: 700;
-  //font-size: 36px;
-  //line-height: 1.16;
-  //text-align: center;
-  //margin-bottom: 50px;
-  //margin-top: 0px;
-
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -14,6 +6,16 @@
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
 }
 .annexes__headlines {
   font-size: 14px;
