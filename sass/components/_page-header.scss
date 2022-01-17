@@ -25,15 +25,14 @@
   display: flex;
   color: var(--main-title-color);
   position: absolute;
-  bottom: 0;
-
+  bottom: 5px;
   background-color: rgba(47, 48, 58, 0.8);
-  // height: 70px;
-  // width: 370px;
-  // margin-bottom: 0px;
-  // flex-direction: column;
-  // align-content: center;
-  // justify-content: center;
+  height: 70px;
+  width: 370px;
+  margin-bottom: 0px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 .command__command-title {
   color: var(--main-text-color);

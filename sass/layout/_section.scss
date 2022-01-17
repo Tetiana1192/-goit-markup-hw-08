@@ -21,6 +21,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    padding-top: 47px;
   }
 }
 .section--other-background {
@@ -28,6 +29,8 @@
   //padding-top: 90px
 }
 
-//.section--bottom {
-//padding-bottom: 47px;
-//}
+.section--bottom {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 47px;
+  }
+}
