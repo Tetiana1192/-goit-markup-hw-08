@@ -13,7 +13,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/header1.jpg);
+      url(../images/header1.jpg);
     background-color: #c4c4c4;
 
     @media (min-device-pixel-ratio: 2),
@@ -24,7 +24,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/header2@2x.jpg);
+        url(../images/header2@2x.jpg);
     }
   }
   @media screen and (max-width: 1199px) {
@@ -40,7 +40,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images.tab/tab-header.jpg);
+      url(../images.tab/tab-header.jpg);
     background-color: #c4c4c4;
 
     @media (min-device-pixel-ratio: 2),
@@ -51,7 +51,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images.tab/header-tab@2x.jpg);
+        url(../images.tab/header-tab@2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -69,7 +69,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images.desktop/header1-des@2x.jpg);
+      url(../images.desktop/header1-des@2x.jpg);
     background-color: #c4c4c4;
 
     @media (min-device-pixel-ratio: 2),
@@ -80,7 +80,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images.desktop/header1-des.jpg);
+        url(../images.desktop/header1-des.jpg);
     }
   }
 }
