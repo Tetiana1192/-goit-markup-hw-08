@@ -1,5 +1,8 @@
 /*hero*/
 .hero {
+  display: flex;
+  text-align: center;
+  align-items: center;
   @media screen and (max-width: 767px) {
     //width: 450px;
     height: 400px;
@@ -93,7 +96,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 118px;
+
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
