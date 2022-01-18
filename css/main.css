@@ -49,6 +49,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -74,6 +75,26 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -169,7 +190,6 @@ nav {
 
 .contacts {
   margin: 0;
-  margin-left: auto;
   padding: 0px;
   border: none;
   -webkit-box-orient: vertical;
@@ -205,11 +225,10 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -281,6 +300,8 @@ nav {
   background-color: #ffffff;
   position: absolute;
   z-index: 2;
+  right: 26px;
+  top: 10px;
 }
 
 .container__menu-button:hover, .container__menu-button:focus {
@@ -321,8 +342,6 @@ nav {
 }
 
 .container__menu-container.is-open {
-  display: block;
-  display: block;
   overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,9 +364,7 @@ nav {
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    z-index: 1;
   }
 }
 
@@ -497,6 +514,7 @@ nav {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -680,7 +698,7 @@ nav {
   display: flex;
   color: var(--main-title-color);
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   background-color: rgba(47, 48, 58, 0.8);
   height: 70px;
   width: 370px;
