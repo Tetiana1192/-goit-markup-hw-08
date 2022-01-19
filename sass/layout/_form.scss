@@ -18,6 +18,10 @@
   color: var(--main-title-color);
   margin-bottom: 20px;
   font-weight: 700;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .form-bloc__email {
   // margin-right: 12px;

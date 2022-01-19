@@ -25,6 +25,10 @@
   color: var(--main-title-color);
   margin-bottom: 20px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .clients__icon-clients {
   width: 44px;

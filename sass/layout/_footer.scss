@@ -1,7 +1,7 @@
 /*footer*/
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
+  //padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -35,10 +35,6 @@
   @media screen and (min-width: 768px) {
     margin-top: 8px;
   }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 8px;
-  }
 }
 
 .address__content {
@@ -64,4 +60,8 @@
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
+}
+
+.address__information {
+  margin-top: 9px;
 }

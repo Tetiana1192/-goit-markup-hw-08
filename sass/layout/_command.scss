@@ -13,6 +13,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
+    margin: -15px;
   }
 }
 
@@ -34,7 +35,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 30px;
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15;
   }
 }
 
