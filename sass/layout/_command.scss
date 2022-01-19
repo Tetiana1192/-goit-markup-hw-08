@@ -1,7 +1,6 @@
 .command {
   margin-top: 0px;
-
-  // display: flex;
+// display: flex;
   padding: 0px;
 
   @media screen and (min-width: 768px) {
@@ -67,6 +66,7 @@
   // display: flex;
   align-items: center;
   justify-content: space-evenly;
+ 
   &:not(:last-child) {
     margin-right: 10px;
   }
