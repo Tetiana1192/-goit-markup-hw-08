@@ -588,6 +588,18 @@ nav {
   }
 }
 
+.section-portfolio {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 .buttons__item {
   border-radius: 4px;
   color: var(--main-title-color);
@@ -677,7 +689,6 @@ nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
-    margin-bottom: 94px;
   }
 }
 

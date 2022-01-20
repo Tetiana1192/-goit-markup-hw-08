@@ -588,6 +588,18 @@ nav {
   }
 }
 
+.section-portfolio {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 /*hero*/
 .hero {
   display: -webkit-box;
@@ -1092,18 +1104,6 @@ nav {
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
-}
-
-.section-portfolio {
-  padding-bottom: 60px;
-  padding-top: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section-portfolio {
     padding-bottom: 94px;
     padding-top: 94px;
   }
