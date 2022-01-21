@@ -610,6 +610,7 @@ nav {
   min-width: 73px;
   text-align: center;
   border: 1px solid var(--text-white-transparent);
+  margin-bottom: 15px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: background-color;
@@ -636,13 +637,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 46px;
+  margin-bottom: 25px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .buttons li:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -650,6 +651,7 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -832,7 +834,14 @@ img {
 /*footer*/
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
